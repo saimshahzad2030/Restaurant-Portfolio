@@ -1,0 +1,64 @@
+.card{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(249, 210, 16);
+    border-radius: 20px;
+    padding: 10px;
+}
+.butonDiv,.imgDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.imgDiv img{
+    width: 200px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.textDiv li{
+    list-style: none;
+}
+
+.textDiv ul{
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and ((max-width: 765px) and (min-width:500px)) {
+    .card{
+        width: 140px;
+    }
+    .imgDiv img{
+        width: 100px;
+        padding: 10px;
+    }
+    .textDiv>h4{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .textDiv>h5{
+        font-size: 14px;
+    }
+    .textDiv>ul>li{
+        font-size: 10px;
+    }
+    .butonDiv> .btn{
+        width: 70px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .card{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,30 @@
+.deals{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+margin-top: 30px;
+}
+.insideDiv{
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 90%;
+    border: 2px solid grey;
+    text-align: center;
+    
+}
+.outsideDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and  (max-width:500px) {
+    .deals{
+        flex-direction: column;
+    }
+}

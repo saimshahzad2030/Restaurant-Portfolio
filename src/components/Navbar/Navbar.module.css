@@ -1,0 +1,190 @@
+
+.SocialImages {
+    width: 25px;
+    min-width: 25px; /* Set a minimum width */
+}
+.deals{margin-right:30px;}
+.SocialImages:hover {
+    width: 30px;
+    min-width: 30px; /* Set a minimum width */
+}
+
+.nav_ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nav_ul li {
+    list-style-type: none;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.logoList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size:22px;
+}
+
+.logoImg {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(249, 210, 16);
+    display: flex;
+    flex-direction: column; /* Change to column for mobile */
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+  top: 0;
+  z-index: 10000; /* Adjust as needed */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+.nav.scrolled {
+    background-color: rgb(249, 210, 16); /* Adjust as needed */
+    box-shadow: 0 4px 6px rgba(167, 163, 163, 0.1); /* Add a subtle box-shadow when scrolled */
+  }
+.link{
+    text-decoration: none;
+    color: rgb(193, 127, 4);
+    font-weight: bold;
+}
+.link:hover{
+    color: rgb(176, 114, 0);
+}
+.row,
+.row2 {
+    width: 100%; /* Change to 100% for mobile */
+    height: 100%; /*Change to auto for mobile */
+    margin-top: 0;
+    display: flex;
+    flex-direction: column; /* Change to column for mobile */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (min-width:1000px) and (max-width:1500px){
+    .nav{flex-direction: row;}
+    .row2 {
+        flex-direction: row;
+       width: 60%;
+    }
+    .row{
+        flex-direction: row;
+        width: 20%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+    .nav {
+        flex-direction: row;
+    }
+    .btn,.btn2{
+        margin-left:5px;
+        font-weight:bold;
+        color:green;
+        border:2px orange solid;
+        width:40px;
+        font-size: 12px;
+    }
+
+    .SocialImages {
+        width: 20px;
+        min-width: 20px; /* Set a minimum width */
+    }
+    .socialList {
+        margin-right: 5px;
+    }
+    .row2 {
+       width: auto;
+      
+    }
+    .deals{margin-right:10px;}
+    #centerRow{
+        padding: 0;
+    }
+    #centerRow > li .link{
+        font-size: 15px;
+    }
+    .logoImg{
+        width: 40px;
+    }
+    #centerRow > li{
+        margin-right: 10px;
+        margin-left: 0px;
+        
+    }
+    .row{
+        width: 40%; 
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding-bottom: 50px;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 505px) {
+    .nav_ul li {
+        margin-right: 10px;
+    }
+    .nav{
+        
+        padding-bottom: 50px;
+    }
+    .logoList {
+        font-size: 10px;
+        padding: 0;
+    }
+    .row2{
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .link{
+       
+        font-size: 14px;
+        margin: 0px;
+        padding: 0;
+    }
+    .nav{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .logolink{
+        font-size: 16px;
+
+    }
+  
+}
+/* .btn{
+    margin-left:10px;
+    font-weight:bold;
+    color:green;
+    border:2px orange solid;
+    width:90px
+}
+.btn2{
+    margin-left:10px;
+    font-weight:bold;
+    color:rgb(0, 45, 128);
+    border:2px orange solid;
+    width:90px;
+    
+} */
